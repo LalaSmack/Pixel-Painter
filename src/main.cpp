@@ -103,6 +103,14 @@ void ColorChange()
         color = BROWN;
     }
 }
+
+void ClearGrid()
+{
+    if (IsKeyPressed(KEY_DELETE))
+    {
+        painting.clear();
+    }
+}
 void DrawGrid()
 {
     for (int i = 0; i < cellCount; i++)
@@ -132,6 +140,7 @@ int main()
         dot.MarkCell();
         dot.UnmarkCell();
         ColorChange();
+        ClearGrid();
         ClearBackground(DARKGRAY);
 
         EndDrawing();
