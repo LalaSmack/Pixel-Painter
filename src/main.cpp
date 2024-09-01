@@ -6,6 +6,7 @@ using namespace std;
 int cellSize = 10;
 int cellCount = 80;
 set<Vector2> painting;
+Color color = BLACK;
 
 bool operator<(const Vector2 v1, const Vector2 v2)
 {
@@ -63,6 +64,45 @@ public:
     }
 };
 
+void ColorChange()
+{
+    if (IsKeyPressed(KEY_ONE))
+    {
+        color = BLACK;
+    }
+    else if (IsKeyPressed(KEY_TWO))
+    {
+        color = RED;
+    }
+    else if (IsKeyPressed(KEY_THREE))
+    {
+        color = BLUE;
+    }
+    else if (IsKeyPressed(KEY_FOUR))
+    {
+        color = GREEN;
+    }
+    else if (IsKeyPressed(KEY_FIVE))
+    {
+        color = YELLOW;
+    }
+    else if (IsKeyPressed(KEY_SIX))
+    {
+        color = ORANGE;
+    }
+    else if (IsKeyPressed(KEY_SEVEN))
+    {
+        color = PURPLE;
+    }
+    else if (IsKeyPressed(KEY_EIGHT))
+    {
+        color = PINK;
+    }
+    else if (IsKeyPressed(KEY_NINE))
+    {
+        color = BROWN;
+    }
+}
 void DrawGrid()
 {
     for (int i = 0; i < cellCount; i++)
@@ -72,7 +112,7 @@ void DrawGrid()
     }
     for (Vector2 p : painting)
     {
-        DrawRectangle(p.x * cellSize, p.y * cellSize, cellSize, cellSize, BLACK);
+        DrawRectangle(p.x * cellSize, p.y * cellSize, cellSize, cellSize, color);
     }
 }
 
@@ -91,6 +131,7 @@ int main()
         dot.MoveDot();
         dot.MarkCell();
         dot.UnmarkCell();
+        ColorChange();
         ClearBackground(DARKGRAY);
 
         EndDrawing();
