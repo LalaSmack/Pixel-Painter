@@ -1,16 +1,26 @@
 #include "C:\raylib\raylib\src\raylib.h"
 #include <iostream>
-#include <list>
+#include <set>
 using namespace std;
 
 int cellSize = 10;
 int cellCount = 80;
-list<Vector2> painting;
+set<Vector2> painting;
+
+bool operator<(const Vector2 v1, const Vector2 v2)
+{
+    if (v1.x == v2.x)
+    {
+        return v1.y < v2.y;
+    }
+    return v1.x < v2.x;
+}
 
 class Dot
 {
 public:
     Vector2 dot = {40, 40};
+
     void DrawDot()
     {
         DrawRectangle(dot.x * cellSize, dot.y * cellSize, cellSize, cellSize, WHITE);
@@ -36,23 +46,23 @@ public:
         }
     }
 
-    void MarkDot()
+    void MarkCell()
     {
         if (IsKeyDown(KEY_SPACE))
         {
-            painting.push_back(dot);
+            painting.insert(dot);
         }
     }
 };
 
-void drawGrid()
+void DrawGrid()
 {
     for (int i = 0; i < cellCount; i++)
     {
         DrawLine(i * cellSize, 0, i * cellSize, cellSize * cellCount, GRAY);
         DrawLine(0, i * cellSize, cellSize * cellCount, i * cellSize, GRAY);
     }
-    for (auto p : painting)
+    for (Vector2 p : painting)
     {
         DrawRectangle(p.x * cellSize, p.y * cellSize, cellSize, cellSize, BLACK);
     }
@@ -68,10 +78,10 @@ int main()
     {
         BeginDrawing();
 
-        drawGrid();
+        DrawGrid();
         dot.DrawDot();
         dot.MoveDot();
-        dot.MarkDot();
+        dot.MarkCell();
         ClearBackground(DARKGRAY);
 
         EndDrawing();
