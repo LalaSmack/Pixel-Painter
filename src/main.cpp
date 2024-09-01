@@ -53,6 +53,14 @@ public:
             painting.insert(dot);
         }
     }
+
+    void UnmarkCell()
+    {
+        if (IsKeyDown(KEY_BACKSPACE))
+        {
+            painting.erase(dot);
+        }
+    }
 };
 
 void DrawGrid()
@@ -82,6 +90,7 @@ int main()
         dot.DrawDot();
         dot.MoveDot();
         dot.MarkCell();
+        dot.UnmarkCell();
         ClearBackground(DARKGRAY);
 
         EndDrawing();
