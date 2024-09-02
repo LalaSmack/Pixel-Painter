@@ -32,8 +32,8 @@ Instant Color Switching: Seamlessly switch between colors without interrupting t
 
 ## Clear Functions
 
-Clear Canvas: Press the _DELETE_ key to reset the entire canvas to a blank state, providing a fresh start for new creations.
-Quick Reset: Easily remove all placed pixels to start over without restarting the application, ensuring a smooth user experience.
+- Clear Canvas: Press the _DELETE_ key to reset the entire canvas to a blank state, providing a fresh start for new creations.
+- Easily remove all placed pixels to start over without restarting the application, ensuring a smooth user experience.
 
 # Installation
 
