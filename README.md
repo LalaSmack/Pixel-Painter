@@ -8,19 +8,10 @@ Pixel Painting Game is an interactive digital art application developed using C+
 
 ## Drawing and Erase
 
-## Drawing and Erase
+- Keyboard-Controlled Drawing: Navigate the cursor using arrow keys and place pixels by pressing the Spacebar.
+- Erase Mode: Toggle erase mode by pressing the E key to remove unwanted pixels, allowing for precise corrections.
 
-<div style="display: flex; align-items: center;">
-  <div style="flex: 1; padding-right: 20px;">
-    <ul>
-      <li><strong>Keyboard-Controlled Drawing:</strong> Navigate the cursor using arrow keys and place pixels by pressing the <code>Spacebar</code>.</li>
-      <li><strong>Erase Mode:</strong> Toggle erase mode by pressing the <code>E</code> key to remove unwanted pixels, allowing for precise corrections.</li>
-    </ul>
-  </div>
-  <div style="flex: 1;">
-    <img src="demo/Drawing.gif" alt="Demo GIF" style="max-width: 100%;">
-  </div>
-</div>
+![Demo GIF](demo/Drawing.gif)
 
 ## Color Change
 
