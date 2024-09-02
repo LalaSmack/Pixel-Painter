@@ -57,7 +57,7 @@ public:
 
     void UnmarkCell()
     {
-        if (IsKeyDown(KEY_BACKSPACE))
+        if (IsKeyDown(KEY_E))
         {
             painting.erase(dot);
         }
