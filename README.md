@@ -28,6 +28,8 @@ Instant Color Switching: Seamlessly switch between colors without interrupting t
 - 8 : Pink
 - 9 : Brown
 
+![Demo GIF](demo/color_change.gif)
+
 ## Clear Functions
 
 Clear Canvas: Press the _DELETE_ key to reset the entire canvas to a blank state, providing a fresh start for new creations.
