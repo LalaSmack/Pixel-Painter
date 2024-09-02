@@ -2,7 +2,7 @@
 
 # Description
 
-Pixel Painting Game is an interactive digital art application developed using C++ and the Raylib library. This project allows users to create pixel art exclusively through keyboard inputs, providing a unique and accessible drawing experience. Key functionalities include drawing and erasing, color selection, and canvas clearing.
+Pixel Painter is an interactive digital art application developed using C++ and the Raylib library. This project allows users to create pixel art exclusively through keyboard inputs, providing a unique and accessible drawing experience. Key functionalities include drawing and erasing, color selection, and canvas clearing.
 
 # Features
 
