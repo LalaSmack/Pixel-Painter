@@ -45,7 +45,7 @@ Instant Color Switching: Seamlessly switch between colors without interrupting t
 ## Steps
 
 - Clone the Repository
-`` bash
+``
 git clone https://github.com/LalaSmack/Pixel-Painter.git
 ``
 - Open Workspace
