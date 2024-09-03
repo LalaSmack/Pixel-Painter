@@ -39,8 +39,8 @@ Instant Color Switching: Seamlessly switch between colors without interrupting t
 
 ## Prerequisites
 
-- C++ Compiler: Ensure you have a C++ compiler installed (e.g., g++).
-- Raylib Library: Install the Raylib library. You can follow the Raylib installation guide.
+- C++ Compiler.
+- Raylib Library: Install the Raylib library. You can follow the <a href='https://www.raylib.com/'>Raylib installation guide.</a>
 
 ## Steps
 
